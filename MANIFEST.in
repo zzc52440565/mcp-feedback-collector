@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include requirements.txt
+include claude_config_example.json
+include claude_config_uvx_example.json
+include start_server.bat
+recursive-include src *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co] 

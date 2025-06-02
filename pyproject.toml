@@ -1,0 +1,92 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-feedback-collector"
+version = "2.0.0"
+description = "A modern MCP server for interactive user feedback collection with GUI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "MCP Feedback Collector", email = "feedback@example.com"},
+]
+keywords = [
+    "mcp",
+    "model-context-protocol", 
+    "feedback",
+    "gui",
+    "interactive",
+    "ai-assistant",
+    "claude",
+    "image-picker"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications",
+    "Topic :: Internet",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "pillow>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black",
+    "isort",
+    "mypy",
+]
+
+[project.urls]
+Homepage = "https://github.com/sanshao85/mcp-feedback-collector"
+Repository = "https://github.com/sanshao85/mcp-feedback-collector"
+Documentation = "https://github.com/sanshao85/mcp-feedback-collector#readme"
+"Bug Tracker" = "https://github.com/sanshao85/mcp-feedback-collector/issues"
+
+[project.scripts]
+mcp-feedback-collector = "mcp_feedback_collector.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_feedback_collector"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/README.md",
+    "/LICENSE",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true 
