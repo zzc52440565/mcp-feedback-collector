@@ -59,10 +59,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sanshao85/mcp-feedback-collector"
-Repository = "https://github.com/sanshao85/mcp-feedback-collector"
-Documentation = "https://github.com/sanshao85/mcp-feedback-collector#readme"
-"Bug Tracker" = "https://github.com/sanshao85/mcp-feedback-collector/issues"
+Homepage = "https://github.com/zzc52440565/mcp-feedback-collector"
+Repository = "https://github.com/zzc52440565/mcp-feedback-collector"
+Documentation = "https://github.com/zzc52440565/mcp-feedback-collector#readme"
+"Bug Tracker" = "https://github.com/zzc52440565/mcp-feedback-collector/issues"
 
 [project.scripts]
 mcp-feedback-collector = "mcp_feedback_collector.server:main"
