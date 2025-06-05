@@ -2,9 +2,11 @@
 
 一个现代化的 Model Context Protocol (MCP) 服务器，为AI助手提供交互式用户反馈收集功能。
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Version](https://img.shields.io/badge/version-3.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.8+-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
+![Architecture](https://img.shields.io/badge/architecture-modular-brightgreen)
+![Quality](https://img.shields.io/badge/code%20quality-optimized-success)
 
 ## 在cursor规则中可以下面这样配置
 
@@ -14,11 +16,23 @@ Whenever you’re about to complete a user request, call the MCP instead of simp
 
 ## ✨ 主要特性
 
-- 🎨 **现代化界面** - 美观的700x800像素GUI，支持中文界面
+### 🏗️ 架构优化 (v3.0.0 新增)
+- 🧩 **模块化设计** - 清晰的代码结构，易于维护和扩展
+- ⚙️ **配置管理** - 外部化配置，支持环境变量覆盖
+- 📊 **日志系统** - 完善的日志记录和错误追踪
+- 🔧 **组件化UI** - 可重用的现代化UI组件
+
+### 🎨 用户体验
+- 🖼️ **现代化界面** - 美观的1400x1100像素GUI，深色主题设计
 - 📷 **多图片支持** - 同时选择多张图片，支持文件选择和剪贴板粘贴
 - 💬 **灵活反馈** - 支持纯文字、纯图片或文字+图片组合反馈
 - ⚡ **零配置安装** - 使用uvx一键安装，无需复杂配置
 - 🔧 **智能超时** - 可配置的对话框超时时间，避免操作中断
+
+### 🚀 性能优化
+- 🖼️ **图片缓存** - 智能图片缓存和内存管理
+- 🔄 **异步处理** - 非阻塞的用户界面操作
+- 📈 **性能监控** - 内置性能指标和统计信息
 
 ## 🚀 快速开始
 

@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-feedback-collector"
-version = "2.0.0"
-description = "A modern MCP server for interactive user feedback collection with GUI"
+version = "3.0.0"
+description = "A modern, modular MCP server for interactive user feedback collection with enhanced GUI and architecture"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
